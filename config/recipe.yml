@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: silverblue customized
+name: silverblue-customized
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
@@ -45,5 +45,13 @@ modules:
       # Installing different branches of the same Flatpak is not supported.
       remove:
         # - org.gnome.eog
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - SourceCodePro
+
+#  - type: gschema-overrides
+#    include:
+#      - zz1-myoverride.gschema.override # test & compile the override file included in config/gschema-overrides/zz1-myoverride.gschema.override
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -24,7 +24,7 @@ modules:
       - gnome-tweaks
       - libavcodec-freeworld
       - most
-      - neovom
+      - neovim
       - nextcloud-client-nautilus
       - openssl
       - piper

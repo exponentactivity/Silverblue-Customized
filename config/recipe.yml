@@ -34,6 +34,7 @@ modules:
       - setroubleshoot
       - tmux
       - virt-manager
+      - libvirt
       - wireguard-tools
     remove:
       # example: removing firefox (in favor of the flatpak)

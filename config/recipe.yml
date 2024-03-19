@@ -20,22 +20,24 @@ modules:
   - type: rpm-ostree
     repos: # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      - gnome-console
-      - gnome-tweaks
-      - libavcodec-freeworld
-      - most
-      - neovim
-      - nextcloud-client-nautilus
-      - openssl
-      - piper
-      - python3-prompt-toolkit
-      - python3-pygments
-      - python3-setproctitle
-      - setroubleshoot
-      - tmux
-      - virt-manager
-      - libvirt
-      - wireguard-tools
+      - gnome-console # Terminal Emulator
+      - gnome-tweaks # GNOME Customization Application
+      - libavcodec-freeworld # Non-free Codecs
+      - most # Pager
+      - neovim # Text Editor
+      - nextcloud-client-nautilus # Nextcloud integration for File Manager
+      - nautilus-gsconnect # KDE Connect integration for File Manager
+      - openssl # KDE Connect Dependency
+      - piper # Mouse Manager
+      - python3-prompt-toolkit # Xonsh Dependency
+      - python3-pygments # Xonsh Dependency
+      - python3-setproctitle # Xonsh Dependency
+      - setroubleshoot # SELinux Client
+      - tmux # Termnal Multiplexer
+      - virt-manager # Libvirt Client
+      - libvirt # Virtualization 
+      - wireguard-tools # VPN
+      - langpacks-en # English Language Pack
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -51,35 +53,39 @@ modules:
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
         - ch.protonmail.protonmail-bridge
-        - com.github.tchx84.Flatseal
-        - com.jgraph.drawio.desktop
-        - com.mattjakeman.ExtensionManager
-        - com.nextcloud.desktopclient.nextcloud
+        - com.github.tchx84.Flatseal # Flatpak Permission Manager
+        - com.jgraph.drawio.desktop # Diagram Application
+        - com.mattjakeman.ExtensionManager # Gnome Extension Manager
+        - com.nextcloud.desktopclient.nextcloud # File Sync
         - com.spotify.Client
         - com.valvesoftware.Steam
-        - com.yubico.yubioath
-        - im.riot.Riot
-        - org.freecadweb.FreeCAD
-        - org.keepassxc.KeePassXC
+        - com.yubico.yubioath # TOTP Client for Yubikey
+        - org.gnome.Fractal # Matrix Chat Client
+        - org.freecadweb.FreeCAD # 3D CAD
+        - org.keepassxc.KeePassXC # Password Manager
         - org.libreoffice.LibreOffice
-        - org.openscad.OpenSCAD
-        - org.rncbc.qpwgraph
-        - org.videolan.VLC
-        - com.github.wwmm.easyeffects
+        - org.openscad.OpenSCAD # Programmatic 3D CAD
+        - org.rncbc.qpwgraph # Audio Patch Bay
+        - org.videolan.VLC # Video Player
+        - com.github.wwmm.easyeffects # Audio Effect Rack
         - com.belmoussaoui.Decoder # QR-code Application
         - com.github.Eloston.UngoogledChromium
-        - com.usebottles.bottles
-        - org.gnome.seahorse.Application
-        - org.gnome.Evolution
+        - com.usebottles.bottles # Wine Prefix Manager
+        - org.gnome.seahorse.Application # GPG Key Manager
+        - org.gnome.Evolution # EMail/Calender/To Do
         - com.github.iwalton3.jellyfin-media-player
-        - com.ultimaker.cura
+        - com.ultimaker.cura # 3D Printer Slicer
         - dev.geopjr.Tuba # Mastodon Client
-        - org.cockpit_project.CockpitClient
         - org.cryptomator.Cryptomator # Encrypted File Vault
-        - org.gimp.GIMP
-        - org.zotero.Zotero
+        - org.gimp.GIMP # Image Manipulation
+        - org.zotero.Zotero # Citation Management and Research Organization
         - com.github.johnfactotum.Foliate # EPUB reader
-        - com.github.Eloston.UngoogledChromium
+        - de.haeckerfelix.Fragments # Torrent Client
+        - org.gnome.baobab # Disk Usage Analyzer
+        - org.gnome.Characters # Symbols and Characters Browser
+        - org.gnome.Loupe # Image Viewer
+        - org.gnome.Cheese # Web Cam Application
+        - org.gnome.NautilusPreviewer # Nautilus File Previews
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
@@ -95,7 +101,7 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - SourceCodePro
+        - ShureTechMono
 
 #  - type: gschema-overrides
 #    include:

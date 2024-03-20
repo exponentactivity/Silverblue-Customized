@@ -101,7 +101,7 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - ShureTechMono
+        - ShareTechMono
 
 #  - type: gschema-overrides
 #    include:

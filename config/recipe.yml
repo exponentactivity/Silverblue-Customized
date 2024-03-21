@@ -42,7 +42,7 @@ modules:
       - gnome-shell-extension-auto-move-windows
       - gnome-shell-extension-caffeine
       - gnome-shell-extension-gsconnect
-      - gnome-shell-extension-unite
+      - gnome-shell-extension-appindicator
       - gnome-shell-extension-windowsNavigator
     remove:
       # example: removing firefox (in favor of the flatpak)

@@ -1,0 +1,33 @@
+[org.gnome.shell]
+favorite-apps=['firefox.desktop', 'im.riot.Riot.desktop', 'org.gnome.Calender.desktop', 'org.gnome.Nautilus.desktop', 'org.keepassxc.KeePassXC.desktop', 'org.gnome.Software.desktop']
+[org.gnome.settings-daemon.plugins.color]
+night-light-enabled=true
+[org.gnome.desktop.calendar]
+show-weekdate=true
+[org.gnome.desktop.interface]
+clock-show-weekday=true
+clock-show-seconds=true
+monospace-font-name='ShureTechMono Nerd Font Mono 10'
+show-battery-percentage=true
+color-theme='prefer-dark'
+[org.gnome.desktop.datetime]
+automatic-timezone=true
+[org.gnome.desktop.input-sources]
+per-window=true
+[org.gnome.desktop.peripherals.touchpad]
+natural-scroll=false
+tap-to-click=true
+[org.gnome.desktop.privacy]
+remove-old-temp-files=true
+remove-old-trash-files=true
+[org.gnome.desktop.search-providers]
+disabled=['firefox.desktop']
+enabled=['org.gnome.Calendar.desktop']
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+[org.gnome.software]
+packaging-format-preference=['flatpak:flathub', 'flatpak:fedora-testing', 'flatpak:fedora', 'rpm']
+[org.gnome.desktop.wm.keybindings]
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']

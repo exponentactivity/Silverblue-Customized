@@ -15,7 +15,7 @@ name='Office'
 
 [org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/0c8db4ed-d3d9-419f-9e7a-de5f71eec3af/]
 apps=['org.cryptomator.Cryptomator.desktop', 'com.yubico.yubioath.desktop', 'setroubleshoot.desktop']
-categories=['Security]
+categories=['Security']
 excluded-apps=[]
 name='Security'
 
@@ -27,7 +27,7 @@ name='Internet'
 
 [org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/319c9539-31f5-40b9-a012-2c5842df5aa8/]
 apps=['com.github.wwmm.easyeffects.desktop', 'org.gnome.Cheese.desktop', 'com.github.iwalton3.jellyfin-media-player.desktop', 'org.rncbc.qpwgraph.desktop', 'com.spotify.Client.desktop', 'org.videolan.VLC.desktop']
-categories=[AudioVideo]
+categories=['AudioVideo']
 excluded-apps=[]
 name='Sound & Video'
 

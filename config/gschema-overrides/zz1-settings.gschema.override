@@ -9,7 +9,7 @@ clock-show-weekday=true
 clock-show-seconds=true
 monospace-font-name='ShureTechMono Nerd Font Mono 10'
 show-battery-percentage=true
-color-theme='prefer-dark'
+color-scheme='prefer-dark'
 [org.gnome.desktop.datetime]
 automatic-timezone=true
 [org.gnome.desktop.input-sources]

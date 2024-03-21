@@ -103,8 +103,8 @@ modules:
       nerd-fonts:
         - ShareTechMono
 
-#  - type: gschema-overrides
-#    include:
-#      - zz1-myoverride.gschema.override # test & compile the override file included in config/gschema-overrides/zz1-myoverride.gschema.override
+  - type: gschema-overrides
+    include:
+      - zz1-settings.gschema.override # test & compile the override file included in config/gschema-overrides/zz1-myoverride.gschema.override
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

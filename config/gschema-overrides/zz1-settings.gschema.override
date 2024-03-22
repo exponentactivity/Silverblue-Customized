@@ -5,69 +5,69 @@ favorite-apps=['firefox.desktop', 'im.riot.Riot.desktop', 'org.gnome.Calender.de
 night-light-enabled=true
 
 [org.gnome.desktop.app-folders]
-folder-children=['Utilities', 'YaST', 'Pardus', '066b36b8-5d22-4d04-892b-b74df9dc5387', 'd9b0926e-06f5-41f7-8d0a-aa816d29dd32', 'b489c42a-3072-417e-9b29-e17e3e50da87', 'baff3c17-e843-4ef5-9ee3-2471b2be941c', 'c49333f2-aa6c-444c-9676-393dacbcf187', 'f2a6a9e9-0e58-47f1-ad98-576f62a9a1b1', '319c9539-31f5-40b9-a012-2c5842df5aa8', '0c8db4ed-d3d9-419f-9e7a-de5f71eec3af', '39b0c697-914b-45ba-a48d-6204f42e2f4b', 'e09f0cd8-2b18-4f4f-97f9-c785b94e958c', '134e368b-1460-4804-b4b2-d00208da7a13']
+folder-children=['Utilities', 'YaST', 'Pardus', 'Office', 'DaemonManagers', 'CAD3D', 'Communication', 'Settings', 'Accessories', 'AudioVideo', 'Security', 'Graphics', 'Internet', 'Games']
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/066b36b8-5d22-4d04-892b-b74df9dc5387/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Office/]
 apps=['org.libreoffice.LibreOffice.math.desktop', 'org.libreoffice.LibreOffice.writer.desktop', 'org.libreoffice.LibreOffice.impress.desktop', 'org.libreoffice.LibreOffice.draw.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.libreoffice.LibreOffice.base.desktop']
 categories=['Office']
 excluded-apps=[]
 name='Office'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/0c8db4ed-d3d9-419f-9e7a-de5f71eec3af/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Security/]
 apps=['org.cryptomator.Cryptomator.desktop', 'com.yubico.yubioath.desktop', 'setroubleshoot.desktop']
 categories=['Security']
 excluded-apps=[]
 name='Security'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/134e368b-1460-4804-b4b2-d00208da7a13/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Internet/]
 apps=['com.github.Eloston.UngoogledChromium.desktop']
 categories=['WebBrowser']
 excluded-apps=[]
 name='Internet'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/319c9539-31f5-40b9-a012-2c5842df5aa8/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/AudioVideo/]
 apps=['com.github.wwmm.easyeffects.desktop', 'org.gnome.Cheese.desktop', 'com.github.iwalton3.jellyfin-media-player.desktop', 'org.rncbc.qpwgraph.desktop', 'com.spotify.Client.desktop', 'org.videolan.VLC.desktop']
 categories=['AudioVideo']
 excluded-apps=[]
 name='Sound & Video'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/39b0c697-914b-45ba-a48d-6204f42e2f4b/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Graphics/]
 apps=['com.jgraph.drawio.desktop.desktop', 'org.gimp.GIMP.desktop']
 categories=['Graphics', 'FlowChart']
 excluded-apps=[]
 name='Graphics'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/b489c42a-3072-417e-9b29-e17e3e50da87/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/CAD3D/]
 apps=['org.openscad.OpenSCAD.desktop', 'com.ultimaker.cura.desktop', 'org.freecadweb.FreeCAD.desktop']
 categories=['3DGraphics', 'Engineering']
 excluded-apps=[]
 name='CAD & 3D'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/baff3c17-e843-4ef5-9ee3-2471b2be941c/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Communication/]
 apps=['org.gnome.Evolution.desktop', 'org.gnome.Fractal.desktop', 'dev.geopjr.Tuba.desktop']
 categories=['InstantMessaging', 'Chat', 'VideoConference']
 excluded-apps=[]
 name='Communication'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/c49333f2-aa6c-444c-9676-393dacbcf187/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Settings/]
 apps=['org.gnome.Settings.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'com.github.tchx84.Flatseal.desktop', 'org.freedesktop.Piper.desktop']
 categories=[]
 excluded-apps=[]
 name='Settings'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/d9b0926e-06f5-41f7-8d0a-aa816d29dd32/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/DaemonManagers/]
 apps=['ch.protonmail.protonmail-bridge.desktop', 'com.nextcloud.desktopclient.nextcloud.desktop']
 categories=[]
 excluded-apps=[]
 name='Daemon Managers'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/0c8d569b-4a44-4383-a97c-6a9c36e535fe/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Games/]
 apps=['com.heroicgameslauncher.hgl.desktop', 'com.valvesoftware.Steam.desktop']
 categories=['Game']
 excluded-apps=[]
 name='Games'
 
-[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/f2a6a9e9-0e58-47f1-ad98-576f62a9a1b1/]
+[org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Accessories/]
 apps=['com.usebottles.bottles.desktop', 'virt-manager.desktop', 'gnome-system-monitor.desktop', 'org.cockpit_project.CockpitClient.desktop']
 categories=['System']
 excluded-apps=[]

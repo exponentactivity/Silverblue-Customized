@@ -254,6 +254,7 @@ StartupWMClass=Gnome-terminal
 SingleMainWindow=false
 Actions=new-window;preferences;
 X-ExecArg=--
+NoDisplay=true
 
 [Desktop Action new-window]
 Name[am]=አዲስ መስኮት
@@ -339,7 +340,6 @@ Name[zh_CN]=新建窗口
 Name[zh_TW]=新增視窗
 Name=New Window
 Exec=gnome-terminal --window
-NoDisplay=true
 
 [Desktop Action preferences]
 Name[an]=Preferencias

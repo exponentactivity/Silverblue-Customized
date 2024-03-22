@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Terminal=false
-NoDisplay=false
+NoDisplay=true
 Icon=org.libreoffice.LibreOffice.startcenter
 Type=Application
 Categories=Office;X-Red-Hat-Base;X-SuSE-Core-Office;
@@ -259,7 +259,6 @@ X-Desktop-File-Install-Version=0.27
 X-Endless-Alias=libreoffice-startcenter
 X-Flatpak-RenamedFrom=libreoffice-startcenter.desktop;
 X-Flatpak=org.libreoffice.LibreOffice
-NoDisplay=true
 
 [Desktop Action Writer]
 Name=Writer

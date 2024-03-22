@@ -92,6 +92,8 @@ modules:
         - org.gnome.Loupe # Image Viewer
         - org.gnome.Cheese # Web Cam Application
         - org.gnome.NautilusPreviewer # Nautilus File Previews
+        - com.protonvpn.www # ProtonVPN
+        - io.freetubeapp.FreeTube # Youtube Client
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).

@@ -136,5 +136,5 @@ enabled-extensions=['background-logo@fedorahosted.org', 'appindicatorsupport@rgc
 [org.gnome.shell.extensions.auto-move-windows]
 application-list=['firefox.desktop:1', 'org.gnome.Console.desktop:1', 'org.keepassxc.KeePassXC.desktop:1', 'org.gnome.Fractal.desktop:2', 'org.gnome.Evolution.desktop:2', 'com.nextcloud.desktopclient.nextcloud.desktop:3', 'ch.protonmail.protonmail-bridge.desktop:3', 'com.github.iwalton3.jellyfin-media-player.desktop:4', 'com.spotify.Client.desktop:4']
 
-[org.gnome.shell.extensions.caffeine]
+[/org/gnome/shell/extensions/caffeine]
 show-indicator='always'

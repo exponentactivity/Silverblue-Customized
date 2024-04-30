@@ -112,15 +112,23 @@ modules:
 
   - type: gnome-extensions
     install:
-      - auto-move-windowsgnome-shell-extensions.gcampax.github.com.v54
-      - caffeinepatapon.info.v54
-      - gsconnectandyholmes.github.io.v56
-      - appindicatorsupportrgcjonas.gmail.com.v57
-      - windowsNavigatorgnome-shell-extensions.gcampax.github.com.v62
-      - panoelhan.io.v22
-      - CoverflowAltTabpalatis.blogspot.com.v71
+      - auto-move-windowsgnome-shell-extensions.gcampax.github.com.v54 # Moves applications to specified Workspace
+      - caffeinepatapon.info.v54 # Keep screen on during inactivity
+      - gsconnectandyholmes.github.io.v56 # KDEConnect fot Gnome SHell
+      - appindicatorsupportrgcjonas.gmail.com.v57 # AppIndicator (tray icons)
+      - windowsNavigatorgnome-shell-extensions.gcampax.github.com.v62 # Navigate windows in Overview using Alt
+      - panoelhan.io.v22 # Clipboard Manager
+      - CoverflowAltTabpalatis.blogspot.com.v71 # Pretty Alt+Tab
+
   - type: gschema-overrides
     include:
-      - zz1-settings.gschema.override # test & compile the override file included in config/gschema-overrides/zz1-myoverride.gschema.override
+      - zz1-settings.gschema.override # test & compile the override file included in config/gschema-overrides/zz1-settings.gschema.override
+
+  - type: script
+    snippets:
+      # BEGIN Install latest Chezmoi binary
+      - /usr/bin/curl -Ls https://github.com/twpayne/chezmoi/releases/latest/download/chezmoi-linux-amd64 -o /usr/bin/chezmoi
+      - /usr/bin/chmod 755 /usr/bin/chezmoi
+      # END Install latest Chezmoi binary
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

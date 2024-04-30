@@ -45,8 +45,8 @@ modules:
       - tailscale # Peer to peer VPN
     remove:
       - gnome-system-monitor
-      # - firefox # Installed as Flatpak
-      # - firefox-langpacks # Dependency of Flatpak, that must be explicitly removed
+      - firefox # Installed as Flatpak
+      - firefox-langpacks # Dependency of Flatpak, that must be explicitly removed
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       # - firefox

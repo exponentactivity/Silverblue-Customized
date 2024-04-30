@@ -60,6 +60,7 @@ modules:
       install:
         - ch.protonmail.protonmail-bridge
         - com.github.tchx84.Flatseal # Flatpak Permission Manager
+        - io.github.flattool.Warehouse # Flatpak Manager
         - com.jgraph.drawio.desktop # Diagram Application
         - com.mattjakeman.ExtensionManager # Gnome Extension Manager
         - com.nextcloud.desktopclient.nextcloud # File Sync

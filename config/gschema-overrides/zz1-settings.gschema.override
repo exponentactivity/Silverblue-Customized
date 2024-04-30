@@ -144,7 +144,7 @@ switch-windows=['<Alt>Tab']
 switch-windows-backward=['<Alt><Shift>Tab']
 
 [org.gnome.desktop.wm.preferences]
-num-workspaces='4'
+num-workspaces=4
 
 ## Extensions
 [org.gnome.shell]

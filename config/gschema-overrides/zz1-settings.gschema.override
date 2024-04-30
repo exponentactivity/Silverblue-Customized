@@ -162,6 +162,7 @@ play-audio-on-copy=false
 keep-search-entry=false
 show-indicator=false
 session-only-mode=true
+paste-on-select=false
 
 [/org/gnome/shell/extensions/coverflowalttab]
 switch-per-monitor=true

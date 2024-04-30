@@ -33,18 +33,14 @@ modules:
       - python3-pygments # Xonsh Dependency
       - python3-setproctitle # Xonsh Dependency
       - setroubleshoot # SELinux Client
-      - tmux # Termnal Multiplexer
+      - tmux # Terminal Multiplexer
       - virt-manager # Libvirt Client
       - libvirt # Virtualization 
       - wireguard-tools # VPN
       - langpacks-en # English Language Pack
       - wl-clipboard # CLI copy/paste - Needed to copy to system clipboard
-      # Gnome Extensions
-      - gnome-shell-extension-auto-move-windows
-      - gnome-shell-extension-caffeine
-      - gnome-shell-extension-gsconnect
-      - gnome-shell-extension-appindicator
-      - gnome-shell-extension-windowsNavigator
+      - libgda # Pano Dependency
+      - libgda-sqlite # Pano Dependency
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -111,7 +107,18 @@ modules:
     fonts:
       nerd-fonts:
         - ShareTechMono
+      google-fonts:
+        - NunitoSans
 
+  - type: gnome-extensions
+    install:
+      - auto-move-windowsgnome-shell-extensions.gcampax.github.com.v54
+      - caffeinepatapon.info.v54
+      - gsconnectandyholmes.github.io.v56
+      - appindicatorsupportrgcjonas.gmail.com.v57
+      - windowsNavigatorgnome-shell-extensions.gcampax.github.com.v62
+      - panoelhan.io.v22
+      - CoverflowAltTabpalatis.blogspot.com.v71
   - type: gschema-overrides
     include:
       - zz1-settings.gschema.override # test & compile the override file included in config/gschema-overrides/zz1-myoverride.gschema.override

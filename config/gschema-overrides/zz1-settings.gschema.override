@@ -117,7 +117,7 @@ remove-old-trash-files=true
 
 [org.gnome.desktop.search-providers]
 disabled=['firefox.desktop']
-enabled=['org.gnome.Calendar.desktop']
+enabled=['org.gnome.Calculator']
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
 [org.gnome.software]

@@ -93,6 +93,7 @@ modules:
         - com.protonvpn.www # ProtonVPN
         - io.freetubeapp.FreeTube # Youtube Client
         - org.gnome.TextEditor # Text Editor
+        - org.gnome.Calculator # Gnome Calculator
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).

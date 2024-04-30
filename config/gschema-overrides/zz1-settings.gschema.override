@@ -148,13 +148,25 @@ num-workspaces=4
 
 ## Extensions
 [org.gnome.shell]
-enabled-extensions=['background-logo@fedorahosted.org', 'appindicatorsupport@rgcjonas.gmail.com', 'caffeine@patapon.info', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'favourites-in-appgrid@harshadgavali.gitlab.org']
+enabled-extensions=['background-logo@fedorahosted.org', 'appindicatorsupport@rgcjonas.gmail.com', 'caffeine@patapon.info', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'favourites-in-appgrid@harshadgavali.gitlab.org', 'tailscale@joaophi.github.com', 'pano@elhan.io', 'tiling-assistant@leleat-on-github', 'CoverflowAltTab@palatis.blogspot.com']
 
 [org.gnome.shell.extensions.auto-move-windows]
 application-list=['firefox.desktop:1', 'org.gnome.Console.desktop:1', 'org.gnome.Fractal.desktop:2', 'org.gnome.Evolution.desktop:2', 'com.nextcloud.desktopclient.nextcloud.desktop:3', 'ch.protonmail.protonmail-bridge.desktop:3', 'org.keepassxc.KeePassXC.desktop:3', 'org.cryptomator.Cryptomator.desktop:3', 'com.yubico.yubioath.desktop:3', 'com.github.iwalton3.jellyfin-media-player.desktop:4', 'com.spotify.Client.desktop:4', 'com.valvesoftware.Steam.desktop:4', 'com.heroicgameslauncher.hgl.desktop:4']
 
 [/org/gnome/shell/extensions/caffeine]
 show-indicator='always'
+
+[/org/gnome/shell/extensions/pano]
+send-notification-on-copy=false
+play-audio-on-copy=false
+keep-search-entry=false
+show-indicator=false
+session-only-mode=true
+
+[/org/gnome/shell/extensions/coverflowalttab]
+switch-per-monitor=true
+
+## Extensions END
 
 [org.gnome.shell.keybindings]
 switch-to-application-1=['<Alt>1']

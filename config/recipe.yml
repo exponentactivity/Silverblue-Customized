@@ -124,6 +124,7 @@ modules:
       - panoelhan.io.v22 # Clipboard Manager
       - CoverflowAltTabpalatis.blogspot.com.v71 # Pretty Alt+Tab
       - favourites-in-appgridharshadgavali.gitlab.org.v6 # Keeps Favorite apps in App Grid
+      - tailscalejoaophi.github.com.v15 # Adds Tailscaleto Quick Settings
 
   - type: gschema-overrides
     include:

@@ -38,6 +38,7 @@ modules:
       - libvirt # Virtualization 
       - wireguard-tools # VPN
       - langpacks-en # English Language Pack
+      - wl-clipboard # CLI copy/paste - Needed to copy to system clipboard
       # Gnome Extensions
       - gnome-shell-extension-auto-move-windows
       - gnome-shell-extension-caffeine

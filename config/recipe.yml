@@ -125,7 +125,7 @@ modules:
       - gsconnectandyholmes.github.io.v57 # KDEConnect fot Gnome SHell
       - appindicatorsupportrgcjonas.gmail.com.v58 # AppIndicator (tray icons)
       - windowsNavigatorgnome-shell-extensions.gcampax.github.com.v64 # Navigate windows in Overview using Alt
-      - panoelhan.io.v22 # Clipboard Manager
+      # Incompatible with GNOME 46 # - panoelhan.io.v22 # Clipboard Manager
       - CoverflowAltTabpalatis.blogspot.com.v72 # Pretty Alt+Tab
       - favourites-in-appgridharshadgavali.gitlab.org.v6 # Keeps Favorite apps in App Grid
       - tailscalejoaophi.github.com.v15 # Adds Tailscaleto Quick Settings

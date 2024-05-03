@@ -46,6 +46,12 @@ modules:
       - libgda # Pano Dependency
       - libgda-sqlite # Pano Dependency
       - tailscale # Peer to peer VPN
+        # BEGIN python-validity - Driver for Validity Fingerprint Reader
+      - open-fprintd
+      - fprintd-clients
+      - fprintd-clients-pam
+      - python3-validity
+        # END python-validity - Driver for Validity Fingerprint Reader
     remove:
       - gnome-system-monitor
       - firefox # Installed as Flatpak

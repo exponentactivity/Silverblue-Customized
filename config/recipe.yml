@@ -48,10 +48,10 @@ modules:
       - gcc-c++ # Dependency of 'nvim-treesitter'
       - tailscale # Peer to peer VPN
         # BEGIN python-validity - Driver for Validity Fingerprint Reader
-      - open-fprintd
-      - fprintd-clients
-      - fprintd-clients-pam
-      - python3-validity
+      #- open-fprintd
+      #- fprintd-clients
+      #- fprintd-clients-pam
+      #- python3-validity
         # END python-validity - Driver for Validity Fingerprint Reader
     remove:
       - gnome-system-monitor

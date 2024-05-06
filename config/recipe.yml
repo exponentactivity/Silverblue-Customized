@@ -47,6 +47,7 @@ modules:
       - libgda-sqlite # Pano Dependency
       - gcc-c++ # Dependency of 'nvim-treesitter'
       - tailscale # Peer to peer VPN
+      - fzf # Fuzzy Finder
         # BEGIN python-validity - Driver for Validity Fingerprint Reader
       #- open-fprintd
       #- fprintd-clients

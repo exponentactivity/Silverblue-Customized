@@ -166,5 +166,8 @@ modules:
     # disable_init: false # Optional - Default: false - Expects type: boolean
     # Disable the timer that updates chezmoi with the interval set above
     # disable_update: false # Optional - Default: false - Expects type: boolean
+    # Policy for handling file that has changed on disk compared to your repo. Accepts "skip" or "replace"
+    changed-file-policy: "replace" # Optional - Default: "skip" - Expects type: string
+
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

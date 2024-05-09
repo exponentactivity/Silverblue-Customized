@@ -151,6 +151,7 @@ modules:
       - zz1-settings.gschema.override # test & compile the override file included in config/gschema-overrides/zz1-settings.gschema.override
 
   - type: chezmoi
+    source: ghcr.io/exponentactivity/modules
     # Installs chezmoi to /usr/bin/chezmoi from latest Github release
     # install_chezmoi: true # Optional - Default: true  - Expects type: boolean
     # () Git repository to initialize

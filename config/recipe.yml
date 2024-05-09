@@ -150,11 +150,20 @@ modules:
     include:
       - zz1-settings.gschema.override # test & compile the override file included in config/gschema-overrides/zz1-settings.gschema.override
 
-  - type: script
-    snippets:
-      # BEGIN Install latest Chezmoi binary
-      - /usr/bin/curl -Ls https://github.com/twpayne/chezmoi/releases/latest/download/chezmoi-linux-amd64 -o /usr/bin/chezmoi
-      - /usr/bin/chmod 755 /usr/bin/chezmoi
-      # END Install latest Chezmoi binary
+  - type: chezmoi
+    # Installs chezmoi to /usr/bin/chezmoi from latest Github release
+    # install_chezmoi: true # Optional - Default: true  - Expects type: boolean
+    # () Git repository to initialize
+    repository: "git@gitlab.com:unshippedreminder/dotfiles.git" # Required - Default: n/a  - Expects type: string
+    # Enable the modules services globally for all users
+    # enable_all_users: true # Optional - Default: true - Expects type: boolean
+    # Dotfiles will be updated with this interval
+    # run_every: '1d' # Optional - Default: '1d' - Expects type: string
+    # Dotfile updates will wait this long after a boot before running
+    # wait_after_boot: '5m' # Optional - Default: '5m' - Expects type: string
+    # Disable the service that initializes `repository` on users that are logged in or has linger enabled
+    # disable_init: false # Optional - Default: false - Expects type: boolean
+    # Disable the timer that updates chezmoi with the interval set above
+    # disable_update: false # Optional - Default: false - Expects type: boolean
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -117,6 +117,7 @@ modules:
         - io.missioncenter.MissionCenter # Process & System Monitor
         - org.mozilla.firefox
         - com.mardojai.ForgeSparks # Code forge notifications
+        - org.gnome.Evince # Document/PDF Viewer
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
         # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),

@@ -154,7 +154,8 @@ enabled-extensions=['background-logo@fedorahosted.org', 'appindicatorsupport@rgc
 application-list=['firefox.desktop:1', 'org.gnome.Console.desktop:1', 'org.gnome.Fractal.desktop:2', 'org.gnome.Evolution.desktop:2', 'com.nextcloud.desktopclient.nextcloud.desktop:3', 'ch.protonmail.protonmail-bridge.desktop:3', 'org.keepassxc.KeePassXC.desktop:3', 'org.cryptomator.Cryptomator.desktop:3', 'com.yubico.yubioath.desktop:3', 'com.github.iwalton3.jellyfin-media-player.desktop:4', 'com.spotify.Client.desktop:4', 'com.valvesoftware.Steam.desktop:4', 'com.heroicgameslauncher.hgl.desktop:4']
 
 [/org/gnome/shell/extensions/caffeine]
-show-indicator='always'
+show-indicator='only-active'
+restore-state=true
 
 [/org/gnome/shell/extensions/pano]
 send-notification-on-copy=false

@@ -54,6 +54,10 @@ modules:
       - fprintd-clients-pam
       - python3-validity
         # END python-validity - Driver for Validity Fingerprint Reader
+        # BEGIN ProtonVPN
+      - https://repo.protonvpn.com/fedora-%OS_VERSION%-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.1-2.noarch.rpm
+      - proton-vpn-gnome-desktop
+        # END ProtonVPN
     remove:
       - gnome-system-monitor
       - firefox # Installed as Flatpak

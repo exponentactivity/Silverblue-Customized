@@ -25,7 +25,7 @@ modules:
     install:
       - gnome-console # Terminal Emulator
       - gnome-tweaks # GNOME Customization Application
-      - libavcodec-freeworld # Non-free Codecs
+      #- libavcodec-freeworld # Non-free Codecs
       - most # Pager
       - neovim # Text Editor
       - lazygit # Dependency of LazyVim

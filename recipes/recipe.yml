@@ -5,14 +5,17 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 40 # latest is also supported if you want new updates ASAP
+image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
   - type: files
     files:
-      - usr: /usr
+      - source: system/usr
+        destination: /usr
+      - source: system/etc
+        destination: /etc
           # copies config/files/usr into your image's /usr.
           # put configuration files you want in /etc/ on a booted system 
           # in /usr/etc/ in the image. read more in files module reference.
@@ -25,7 +28,7 @@ modules:
     install:
       - gnome-console # Terminal Emulator
       - gnome-tweaks # GNOME Customization Application
-      - libavcodec-freeworld # Non-free Codecs
+      #- libavcodec-freeworld # Non-free Codecs
       - most # Pager
       - neovim # Text Editor
       - lazygit # Dependency of LazyVim
@@ -142,22 +145,21 @@ modules:
 
   - type: gnome-extensions
     install:
-      - auto-move-windowsgnome-shell-extensions.gcampax.github.com.v57 # Moves applications to specified Workspace
-      - caffeinepatapon.info.v54 # Keep screen on during inactivity
-      - gsconnectandyholmes.github.io.v57 # KDEConnect fot Gnome SHell
-      - appindicatorsupportrgcjonas.gmail.com.v58 # AppIndicator (tray icons)
-      - windowsNavigatorgnome-shell-extensions.gcampax.github.com.v64 # Navigate windows in Overview using Alt
+      - smart-auto-movekhimaros.com.v28 # Moves applications to specified Workspace
+      - caffeinepatapon.info.v55 # Keep screen on during inactivity
+      - gsconnectandyholmes.github.io.v58 # KDEConnect for Gnome SHell
+      - appindicatorsupportrgcjonas.gmail.com.v59 # AppIndicator (tray icons)
+      - windowsNavigatorgnome-shell-extensions.gcampax.github.com.v66 # Navigate windows in Overview using Alt
       # Incompatible with GNOME 46 # - panoelhan.io.v22 # Clipboard Manager
-      - CoverflowAltTabpalatis.blogspot.com.v73 # Pretty Alt+Tab
-      # Incompatible with GNOME 46 # - favourites-in-appgridharshadgavali.gitlab.org.v6 # Keeps Favorite apps in App Grid
-      - tailscalejoaophi.github.com.v15 # Adds Tailscaleto Quick Settings
+      - CoverflowAltTabpalatis.blogspot.com.v76 # Pretty Alt+Tab
+      - pinned-apps-in-appgridbrunosilva.io.v1 # Keeps Favorite apps in App Grid
+      - tailscalejoaophi.github.com.v16 # Adds Tailscaleto Quick Settings
 
   - type: gschema-overrides
     include:
       - zz1-settings.gschema.override # test & compile the override file included in config/gschema-overrides/zz1-settings.gschema.override
 
   - type: chezmoi
-    source: ghcr.io/exponentactivity/modules
     # () Git repository to initialize
     repository: "git@gitlab.com:unshippedreminder/dotfiles.git" # Required - Default: n/a  - Expects type: string
     # Enable the modules services globally for all users

@@ -31,6 +31,9 @@ modules:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo # Source of tailscale
     install:
       - xonsh # Shell
+      - python3-prompt-toolkit # Xonsh Dependency
+      - python3-pygments # Xonsh Dependency
+      - python3-setproctitle # Xonsh Dependency
       - gnome-console # Terminal Emulator
       - gnome-tweaks # GNOME Customization Application
       #- libavcodec-freeworld # Non-free Codecs
@@ -41,9 +44,6 @@ modules:
       - nautilus-gsconnect # KDE Connect integration for File Manager
       - openssl # KDE Connect Dependency
       - piper # Mouse Manager
-      - python3-prompt-toolkit # Xonsh Dependency
-      - python3-pygments # Xonsh Dependency
-      - python3-setproctitle # Xonsh Dependency
       - setroubleshoot # SELinux Client
       - tmux # Terminal Multiplexer
       - virt-manager # Libvirt Client
@@ -51,8 +51,8 @@ modules:
       - wireguard-tools # VPN
       - langpacks-en # English Language Pack
       - wl-clipboard # CLI copy/paste - Needed to copy to system clipboard
-      - libgda # Pano Dependency
-      - libgda-sqlite # Pano Dependency
+      #- libgda # Pano Dependency
+      #- libgda-sqlite # Pano Dependency
       - gcc-c++ # Dependency of 'nvim-treesitter'
       - tailscale # Peer to peer VPN
       - fzf # Fuzzy Finder
@@ -62,12 +62,7 @@ modules:
       - fprintd-clients-pam
       - python3-validity
         # END python-validity - Driver for Validity Fingerprint Reader
-        # BEGIN ProtonVPN
-        # Docs: https://protonvpn.com/support/official-linux-vpn-fedora/
-      - https://repo.protonvpn.com/fedora-%OS_VERSION%-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.1-2.noarch.rpm
-        # Manually Install `proton-vpn-gnome-desktop`
-        # END ProtonVPN
-      - meld
+      - meld # Git Merger
     remove:
       - gnome-system-monitor
       - firefox # Installed as Flatpak
@@ -76,10 +71,6 @@ modules:
       - fprintd
       - fprintd-pam
         # END python-validity - Driver for Validity Fingerprint Reader
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -137,6 +128,7 @@ modules:
         - org.qbittorrent.qBittorrent # Torrent Client
         - org.wireshark.Wireshark # Network Sniffer
         - org.torproject.torbrowser-launcher # Tor Browser
+        - org.gnome.Todo # Gnome ToDo App
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
         # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
@@ -145,7 +137,6 @@ modules:
       remove:
         - org.fedoraproject.MediaWriter
         - org.gnome.Geary
-        # - org.gnome.eog
   - type: fonts
     fonts:
       nerd-fonts:

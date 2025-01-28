@@ -6,8 +6,6 @@ Wants=network-online.target
 [Service]
 Restart=on-failure
 Type=oneshot
-User=1000
-Group=1000
 ExecStart=/var/home/linuxbrew/.linuxbrew/bin/brew install $APPLICATIONS
 Environment='HOMEBREW_NO_INSTALL_UPGRADE=""'
 EnvironmentFile=/usr/share/bluebuild/brew-applications/applications.env

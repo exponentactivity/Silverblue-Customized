@@ -189,7 +189,7 @@ modules:
     # List of applications to install are in ../files/usr/share/bluebuild/brew-applications/applications.env
 
   - type: systemd
-    system:
+    user:
       enabled:
         - brew-applications.service
 

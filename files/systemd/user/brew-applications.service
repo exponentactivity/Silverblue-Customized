@@ -11,4 +11,4 @@ Environment='HOMEBREW_NO_INSTALL_UPGRADE=""'
 EnvironmentFile=/usr/share/bluebuild/brew-applications/applications.env
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

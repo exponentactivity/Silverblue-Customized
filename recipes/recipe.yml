@@ -146,15 +146,15 @@ modules:
 
   - type: gnome-extensions
     install:
-      - smart-auto-movekhimaros.com.v28 # Moves applications to specified Workspace
-      - caffeinepatapon.info.v55 # Keep screen on during inactivity
-      - gsconnectandyholmes.github.io.v58 # KDEConnect for Gnome SHell
-      - appindicatorsupportrgcjonas.gmail.com.v59 # AppIndicator (tray icons)
-      - windowsNavigatorgnome-shell-extensions.gcampax.github.com.v66 # Navigate windows in Overview using Alt
+      #- smart-auto-movekhimaros.com.v28 # Moves applications to specified Workspace
+      - caffeinepatapon.info.v56 # Keep screen on during inactivity
+      - gsconnectandyholmes.github.io.v62 # KDEConnect for Gnome SHell
+      #- appindicatorsupportrgcjonas.gmail.com.v59 # AppIndicator (tray icons)
+      - windowsNavigatorgnome-shell-extensions.gcampax.github.com.v71 # Navigate windows in Overview using Alt
       # Incompatible with GNOME 46 # - panoelhan.io.v22 # Clipboard Manager
-      - CoverflowAltTabpalatis.blogspot.com.v76 # Pretty Alt+Tab
-      - pinned-apps-in-appgridbrunosilva.io.v1 # Keeps Favorite apps in App Grid
-      - tailscalejoaophi.github.com.v16 # Adds Tailscaleto Quick Settings
+      - CoverflowAltTabpalatis.blogspot.com.v78 # Pretty Alt+Tab
+      - pinned-apps-in-appgridbrunosilva.io.v2 # Keeps Favorite apps in App Grid
+      - tailscalejoaophi.github.com.v19 # Adds Tailscaleto Quick Settings
 
   - type: gschema-overrides
     include:

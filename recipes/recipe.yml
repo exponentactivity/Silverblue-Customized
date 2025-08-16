@@ -34,6 +34,7 @@ modules:
       - python3-prompt-toolkit # Xonsh Dependency
       - python3-pygments # Xonsh Dependency
       - python3-setproctitle # Xonsh Dependency
+      - pipx # "Sandboxed" pip
       - gnome-console # Terminal Emulator
       - gnome-tweaks # GNOME Customization Application
       #- libavcodec-freeworld # Non-free Codecs

@@ -1,3 +1,5 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
 name: silverblue-customized
 # description will be included in the image's metadata
@@ -25,7 +27,8 @@ modules:
       - rpmfusion
 
   - type: rpm-ostree
-    repos: # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+    repos: 
+      # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/atim/lazygit/repo/fedora-%OS_VERSION%/atim-lazygit-fedora-%OS_VERSION%.repo # LazyGit
       - https://copr.fedorainfracloud.org/coprs/sneexy/python-validity/repo/fedora-%OS_VERSION%/sneexy-python-validity-fedora-%OS_VERSION%.repo # python-validity - Driver for Validity Fingerprint Reader
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo # Source of tailscale
@@ -74,70 +77,62 @@ modules:
         # END python-validity - Driver for Validity Fingerprint Reader
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
-      install:
-        - ch.protonmail.protonmail-bridge
-        - com.github.tchx84.Flatseal # Flatpak Permission Manager
-        - io.github.flattool.Warehouse # Flatpak Manager
-        - com.jgraph.drawio.desktop # Diagram Application
-        - com.mattjakeman.ExtensionManager # Gnome Extension Manager
-        - com.nextcloud.desktopclient.nextcloud # File Sync
-        - com.spotify.Client # Music Streaming
-        - com.valvesoftware.Steam # Game Launcher/Store
-        - com.yubico.yubioath # TOTP Client for Yubikey
-        - org.gnome.Fractal # Matrix Chat Client
-        - org.freecadweb.FreeCAD # 3D CAD
-        - org.keepassxc.KeePassXC # Password Manager
-        - org.libreoffice.LibreOffice # Office Suite
-        - org.openscad.OpenSCAD # Programmatic 3D CAD
-        - org.rncbc.qpwgraph # Audio Patch Bay
-        - org.videolan.VLC # Video Player
-        - com.github.wwmm.easyeffects # Audio Effect Rack
-        - com.belmoussaoui.Decoder # QR-code Application
-        - com.github.Eloston.UngoogledChromium # Web Browser
-        - com.usebottles.bottles # Wine Prefix Manager
-        - org.gnome.seahorse.Application # GPG Key Manager
-        - org.gnome.Evolution # EMail/Calender/To Do
-        - com.github.iwalton3.jellyfin-media-player # Desktop app for Jellyfin
-        - com.ultimaker.cura # 3D Printer Slicer
-        - dev.geopjr.Tuba # Mastodon Client
-        - org.cryptomator.Cryptomator # Encrypted File Vault
-        - org.gimp.GIMP # Image Manipulation
-        - org.zotero.Zotero # Citation Management and Research Organization
-        - com.github.johnfactotum.Foliate # EPUB reader
-        - org.gnome.baobab # Disk Usage Analyzer
-        - org.gnome.Characters # Symbols and Characters Browser
-        - org.gnome.Loupe # Image Viewer
-        - org.gnome.Cheese # Web Cam Application
-        - org.gnome.NautilusPreviewer # Nautilus File Previews
-        - io.freetubeapp.FreeTube # Youtube Client
-        - org.gnome.TextEditor # Text Editor
-        - org.gnome.Calculator # Gnome Calculator
-        - io.missioncenter.MissionCenter # Process & System Monitor
-        - org.mozilla.firefox # Web Browser
-        - com.mardojai.ForgeSparks # Code forge notifications
-        - org.gnome.Evince # Document/PDF Viewer
-        - com.calibre_ebook.calibre # E-book organization
-        - it.mijorus.gearlever # AppImage Manager
-        - org.inkscape.Inkscape # Image Editor
-        - org.kde.kdenlive # Video Editor
-        - org.qbittorrent.qBittorrent # Torrent Client
-        - org.wireshark.Wireshark # Network Sniffer
-        - org.torproject.torbrowser-launcher # Tor Browser
-        - org.gnome.Todo # Gnome ToDo App
-        # - org.gnome.Loupe
-        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-        # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
-        # only normal flatpak applications are (like Floorp Lightning web browser in this example).
-        # Installing different branches of the same Flatpak is not supported.
-      remove:
-        - org.fedoraproject.MediaWriter
-        - org.gnome.Geary
+    configurations:
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        # If no repo information is specified, Flathub will be used by default
+        install: # system flatpaks we want all users to have and not remove
+          - ch.protonmail.protonmail-bridge
+          - com.github.tchx84.Flatseal # Flatpak Permission Manager
+          - io.github.flattool.Warehouse # Flatpak Manager
+          - com.jgraph.drawio.desktop # Diagram Application
+          - com.mattjakeman.ExtensionManager # Gnome Extension Manager
+          - com.nextcloud.desktopclient.nextcloud # File Sync
+          - com.spotify.Client # Music Streaming
+          - com.valvesoftware.Steam # Game Launcher/Store
+          - com.yubico.yubioath # TOTP Client for Yubikey
+          - org.gnome.Fractal # Matrix Chat Client
+          - org.freecadweb.FreeCAD # 3D CAD
+          - org.keepassxc.KeePassXC # Password Manager
+          - org.libreoffice.LibreOffice # Office Suite
+          - org.openscad.OpenSCAD # Programmatic 3D CAD
+          - org.rncbc.qpwgraph # Audio Patch Bay
+          - org.videolan.VLC # Video Player
+          - com.github.wwmm.easyeffects # Audio Effect Rack
+          - com.belmoussaoui.Decoder # QR-code Application
+          - com.github.Eloston.UngoogledChromium # Web Browser
+          - com.usebottles.bottles # Wine Prefix Manager
+          - org.gnome.seahorse.Application # GPG Key Manager
+          - org.gnome.Evolution # EMail/Calender/To Do
+          - com.github.iwalton3.jellyfin-media-player # Desktop app for Jellyfin
+          - com.ultimaker.cura # 3D Printer Slicer
+          - dev.geopjr.Tuba # Mastodon Client
+          - org.cryptomator.Cryptomator # Encrypted File Vault
+          - org.gimp.GIMP # Image Manipulation
+          - org.zotero.Zotero # Citation Management and Research Organization
+          - com.github.johnfactotum.Foliate # EPUB reader
+          - org.gnome.baobab # Disk Usage Analyzer
+          - org.gnome.Characters # Symbols and Characters Browser
+          - org.gnome.Loupe # Image Viewer
+          - org.gnome.Cheese # Web Cam Application
+          - org.gnome.NautilusPreviewer # Nautilus File Previews
+          - io.freetubeapp.FreeTube # Youtube Client
+          - org.gnome.TextEditor # Text Editor
+          - org.gnome.Calculator # Gnome Calculator
+          - io.missioncenter.MissionCenter # Process & System Monitor
+          - org.mozilla.firefox # Web Browser
+          - com.mardojai.ForgeSparks # Code forge notifications
+          - org.gnome.Evince # Document/PDF Viewer
+          - com.calibre_ebook.calibre # E-book organization
+          - it.mijorus.gearlever # AppImage Manager
+          - org.inkscape.Inkscape # Image Editor
+          - org.kde.kdenlive # Video Editor
+          - org.qbittorrent.qBittorrent # Torrent Client
+          - org.wireshark.Wireshark # Network Sniffer
+          - org.torproject.torbrowser-launcher # Tor Browser
+          - org.gnome.Todo # Gnome ToDo App
+      # - scope: user # Also add Flathub user repo, but no user packages
+
   - type: fonts
     fonts:
       nerd-fonts:
